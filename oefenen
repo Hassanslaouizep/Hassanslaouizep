@@ -1,0 +1,35 @@
+Linux commands:
+sudo: voor een commando voor administrator rechten
+sudo su: voor super user rechten
+cd: navigeer door mappen geef directory aan met /../../
+cd ..: stap terug
+ls: bekijk waar je bent
+ls -all: lijst van mappen en rechten
+yum -y install (programma): installeer programma
+pwd: bekijk het pad 
+mkdir: map aanmaken
+rm: verwijder file
+echo: "inhoud" > filename.txt: nieuw tekst bestand met inhoud
+cat: dir/program: open program of file
+cat dir/program |grep var: pak bestand met waarde var
+locate (item): vind het item (map, file etc.)
+touch: hiermee maak je een tekst bestand
+nano: hiermee lees en bewerk je een tekst bestand
+lscpu: hiermee bekijk je cpu informatie
+useradd (user): voeg gebruiker toe
+groepadd (group): maak groep aan
+usermod -a -G (group) (user): voeg user aan groep toe
+usermod -d /dir/dir/user user: wijzig de /home van user
+grep (user) /etc/passwd: user info
+chage -E year-m-d (user): account verval datum
+chage -d year-m-d (user): ww verval datum
+ifconfig: ip-adress info
+updatedb: database update klaar
+chmod xxx (item): rechten van item aanpassen
+chage -L (user): laat account aging informatie zien
+man (command): laat informatie zien van het speciefieke commando
+free: hoeveel RAM vrij
+top: opent top
+htop: opent htop
+
+
