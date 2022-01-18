@@ -1,0 +1,63 @@
+Mappenstructuur                                        Tekstbestand in map plaatsen                                                Map verplaatsen naar map
+New-item P:\Documenten -type directory                 New-item P:\Documenten\Notulen\readme.txt -type file -value "tekst"         copy-item P:\Folders P:\Backup -recurse
+
+Mappenstructuur opvragen:                              Variable maken:
+Get-childitem P:\                                      $a = get-item P:\Documenten\test
+
+Vraag alle tekst bestanden op de P schijf op          Alias opvragen van command   
+Get-Childitem -path p:\*.txt -recurse                 Get-alias p*   
+
+Vraag door gebruikmaking van get-eventlog de meeste recente vijf “information” op uit de application eventlog
+get-eventlog application -newest 5
+get-eventlog -list
+
+
+LINUX
+                                                                       Map aanmaken 
+Installeer op volgorde de volgende applicaties:                        Mkdir /home/student/nieuwe map
+epel-release
+htop
+ftp
+
+yum install programma naam                                             Vraag uit het bestand proc/cpuinfo de volgende informatie op:
+                                                                       Cat /proc/cpuinfo/
+                                                                 
+zoek ook uit:
+hoeelheid RAM in MB: 3.294 mb (3374034 kb/1024 = mb)
+Hoeveel vrije schijfruimte:
+Cat /proc/meminfom       
+
+Maak de volgende drie gebruikers (in het format JansenA) aan            groupadd groep aanmaken
+useradd gebruiker                                                       
+passwd 
+Su gebruiker
+userdel gebruiker
+
+Pas de home directory van John aan naar de notulen map en bekijk de aanpassing in het passwd bestand
+usermod -d home/student/documenten/notulen gebruiker
+
+Maak een screenshot van het aangepaste account van John
+Getent passwd
+
+Verander de last password change datum voor Fatiha van het wachtwoord naar 1 januari 2021 en verleng het account tot 1 mei 2021
+chage -d 2021-01-01 gebruiker
+chage -E 2021-03-01 gebruiker
+
+Maak een screenshot van het aangepaste account van Fatiha                                      delete de 6 gebruikers die je hebt aangemaakt userdel
+chage -l gebruiker                                                                             userdel gebruiker
+ 
+Onderzoek hoeveel percentage CPU en geheugen (RES) htop en top verbruiken.                     verwijder de applicaties htop en epel-release van het systeem
+                                                                                               yum remove of yum erase
+        
+· Maak een screenshot van verbruik van beide applicaties                                    Vraag het Ip adres en subnetmask van je systeem op
+Htop                                                                                        ifconfig
+top
+
+Bouw de lokale zoek database op                                                             zoek de locatie van het bestand resolv.conf
+uptime
+                                                                                              grep resolv.conf
+zoek de locatie van het bestand os-release
+locate os-release                                                                           
+                                                                                              updatedb reolv.conf
+
+                                                                                              locate
